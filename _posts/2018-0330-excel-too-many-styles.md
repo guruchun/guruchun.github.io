@@ -49,4 +49,27 @@ errHandler:
 End Sub
 ```
 
-하지만 다음과 같이 
+* 스타일 이름이 잘못되어 있는 경우 style.Delete가 동작하지 않는다. 
+* 아직 해결방법을 못찾았다. 
+  * 엑셀에서 직접 style 이름을 변경하고 매크로를 돌리면 지워지는데
+  * `ActiveWorkbook.Styles(i).NameLocal = "abc_" & i` 처럼 코드에서 이름을 변경하려고 하면 에러가 발생한다.
+    * `컴파일 오류: 인수의 개수나 속성 지정이 잘못되었습니다.`
+``` console
+C￥AØ_XD AOA¾AIA¤ 
+C￥AØ_WIPER 
+C￥AØ_SMG-CKD-d1.1 
+C￥AØ_Sheet1_1_1.SUMMARY 
+C￥AØ_Sheet1 (2)_1.SUMMARY 
+C￥AØ_RDTR99ML 
+C￥AØ_MKN-M1.1 
+C￥AØ_lx-taxi 
+C￥AØ_laroux_2_°³¹ßAIA¤ 
+C￥AØ_1.SUMMARY 
+C￥AØ_°³¹ßAIA¤  (2)_°³¹ßAIA¤ 
+C￥AØ_¸nA÷ 
+C￥AØ_¡ßFO AoAUºnºn±³ 
+AÞ¸¶_SMG-CKD-d1.1 
+AÞ¸¶_Sheet1_XD AOA¾AIA¤ 
+AÞ¸¶_Sheet1 (2)_1.SUMMARY 
+AÞ¸¶_SAMPLE 
+```
