@@ -36,10 +36,3 @@ print("hello world!")
 ```
 </p>
 </details>
-```
-<details><summary>해설 보기</summary>
-<p>
-collapsed content...
-</p>
-</details>
-```
