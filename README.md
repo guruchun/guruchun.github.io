@@ -28,11 +28,17 @@ tags: [tag1, tag2, tag3]
 ```
 ## Collapsible Text
 
-* [Mission] 입력받은 숫자보다 작은 모든 소수를 찾으세요  
+``` html
 <details><summary>해설 보기</summary>
 <p>
-```python
-print("hello world!")
-```
+content
 </p>
+</details>
+```
+[예시] 입력받은 숫자보다 작은 모든 소수를 찾으세요  
+<details><summary>해설 보기</summary>
+  
+``` python
+print('hello world')
+```
 </details>
