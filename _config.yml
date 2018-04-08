@@ -1,6 +1,6 @@
 future: true
 # Dependencies
-gems:                [jekyll-paginate]
+plugins:                [jekyll-paginate]
 
 # Permalinks
 #
@@ -26,4 +26,4 @@ emal: guruchun@gmail.com
 description: System & Software Engineer working for LG CNS
 
 
-theme: jekyll-theme-slate
+#theme: jekyll-theme-slate
